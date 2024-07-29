@@ -69,11 +69,11 @@ const SendMessageForm = () => {
         <div className="bg-gray-700 p-4 rounded-t-lg flex items-center justify-between border-b border-gray-600">
           <div className="flex items-center">
             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-white">
-            <img
-                    src="/c-logo.png"
-                    alt="avatar"
-                    className="w-10 h-10 rounded-full"
-                  />
+              <img
+                src="/c-logo.png"
+                alt="avatar"
+                className="w-10 h-10 rounded-full"
+              />
             </div>
             <div className="ml-4">
               <h2 className="text-xl font-bold text-white">CosmoGPT</h2>
@@ -113,7 +113,7 @@ const SendMessageForm = () => {
               )}
               <div className="ml-3 mr-3">
                 {chatItem.sender === "bot" && typeof chatItem.text === "object" ? (
-                  <ul className="list-decimal list-inside">
+                  <ul className="list-disc list-inside">
                     {Object.entries(chatItem.text).map(([key, value], index) => (
                       <li key={index} className="mb-2">
                         {value}
